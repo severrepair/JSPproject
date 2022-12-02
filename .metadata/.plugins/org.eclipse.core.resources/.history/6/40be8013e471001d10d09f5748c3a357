@@ -1,0 +1,15 @@
+<%@ page contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<%@ page language="java" import="java.sql.*, java.util.*, java.text.*" %>
+<%@ page import="com.oreilly.servlet.MultipartRequest" %>
+<%@ page import="com.oreilly.servlet.multipart.DefaultFileRenamePolicy" %>
+<% request.setCharacterEncoding("UTF-8"); %>
+
+<%
+	String fileurl="/jsp/chap12/upload";
+	String saveFolder="upload";
+	String encType="UTF-8";
+	int Maxsize = 5*1024*1024;
+	
+	MultipartRequest multi = null;
+	DefaultFileRenamePolicy policy = new DefaultFileRenamePolicy();
+%>

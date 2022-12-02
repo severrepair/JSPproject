@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>메인</title>
+</head>
+<body>
+<ul>
+<li><A href="product_write.html">상품 등록하기</A>
+<li><A href="shop_list.jsp">쇼핑하기</A>
+<li><A href="product_list.jsp">전체 상품 보기</A>
+</ul>
+</body>
+</html>

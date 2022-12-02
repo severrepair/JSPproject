@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>메인</title>
+</head>
+<body>
+<ul>
+<li><A href="product_write.htm">상품 등록하기</A>
+</ul>
+
+</body>
+</html>

@@ -1,0 +1,49 @@
+<%@ page contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<%@ page language="java" import="java.sql.*, java.util.*, java.text.* " %>
+<% request.setCharacterEncoding("UTF-8");%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>상품 목록</title>
+</head>
+<body>
+<P align=center>
+<FONT color=#0000ff face=굴림 size=+1>
+<STRONG>상품 목록</STRONG>
+</FONT>
+</P>
+
+<FORM method=post name=search action="/Shop/product_list.jsp">
+<TABLE border=0 width=95%>
+	<TR>
+		<TD align=right>
+			<FONT size=-1>상품명으로 찾기</FONT>
+			<INPUT type=text name=pname>
+			<INPUT type=submit value="검색">
+		</TD>
+	</TR>
+	<TR>
+		<TH>
+			<FONT size=-1>
+				[<A href="/Shop/main.html">메인으로</A>]
+				<A href="product_list.jsp? cat=11">가구</A>
+				<A href="product_list.jsp? cat=11">가구</A>
+				<A href="product_list.jsp? cat=11">가구</A>
+				<A href="product_list.jsp? cat=11">가구</A>
+				<A href="product_list.jsp? cat=11">가구</A>
+				<A href="product_list.jsp? cat=11">가구</A>
+				<A href="product_list.jsp? cat=11">가구</A>
+				<A href="product_list.jsp? cat=11">가구</A>
+				<A href="product_list.jsp? cat=11">가구</A>
+				
+			</FONT>
+	
+	
+	
+	
+</TABLE>
+</FORM>
+
+</body>
+</html>

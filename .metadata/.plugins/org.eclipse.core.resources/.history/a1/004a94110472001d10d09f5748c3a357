@@ -1,0 +1,12 @@
+<%@ page contentType="text/html; charset=UTF-8"pageEncoding="UTF-8"%>
+<%@ page language="java" import="java.sql.*" %>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>상품 설명(이미지) 보기</title>
+</head>
+<body>
+
+</body>
+</html>

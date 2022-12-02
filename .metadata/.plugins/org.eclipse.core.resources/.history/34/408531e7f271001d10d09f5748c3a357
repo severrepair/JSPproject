@@ -1,0 +1,20 @@
+<%@ page contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<%@ page language="java" import="java.sql.*, java.util.*, java.text.* " %>
+<% request.setCharacterEncoding("UTF-8");%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>상품 목록</title>
+</head>
+<body>
+<P align=center>
+<FONT color=#0000ff face=굴림 size=+1>
+<STRONG>상품 목록</STRONG>
+</FONT>
+</P>
+
+<FORM method=post name=search action="/Shop/product_list.jsp"></FORM>
+
+</body>
+</html>

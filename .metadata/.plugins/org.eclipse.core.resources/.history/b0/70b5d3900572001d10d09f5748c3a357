@@ -1,0 +1,19 @@
+<%@ page contentType="text/html; charset=UTF-8"pageEncoding="UTF-8"%>
+<%@ page language="java" import="java.sql.*" %>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>상품 설명(이미지) 보기</title>
+<SCRIPT language="javascript">
+	function view(temp){
+		filename = "http://localhost:8080/jsp/chap12/image/" + temp;
+		i = window.open(filename, "win", "height=350,width=450,toolbar=0,menubar=0,scrollbars=1,resizable=1,status=0";)
+	}
+</SCRIPT>
+
+</head>
+<body>
+
+</body>
+</html>
