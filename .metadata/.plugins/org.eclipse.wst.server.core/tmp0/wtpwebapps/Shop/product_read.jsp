@@ -33,7 +33,7 @@ ResultSet rs = null;
 
 long id = Long.parseLong(request.getParameter("id"));
 
-String url = "http://localhost:8080/EclipseJSP/Shop/src/main/webapp/upload/";
+String url = "/Shop/upload/";
 String small = null;
 
 out.print("[<A href=\"product_list.jsp?go=" +request.getParameter("go"));
