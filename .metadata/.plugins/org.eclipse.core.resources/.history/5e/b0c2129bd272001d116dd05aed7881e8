@@ -1,0 +1,20 @@
+<%@ page contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
+<%@ page language="java" import="java.sql.*,java.util.*,java.text.*" %>
+<% request.setCharacterEncoding("UTF-8"); %>
+
+<%
+	session = request.getSession();
+	
+	String[] a = session.getValueNames();
+	
+	String cardno="";
+	String wname = request.getParameter("wname");
+	String addr = request.getParameter("addr");
+	String tel = request.getParameter("tel");
+	String pay = request.getParameter("pay");
+	
+	
+	
+
+%>
+

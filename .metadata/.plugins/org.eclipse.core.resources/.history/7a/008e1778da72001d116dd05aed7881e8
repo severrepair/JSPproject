@@ -1,0 +1,50 @@
+<%@ page contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
+<%@ page language="java" import="java.sql.*, java.util.*, java.text.*" %>
+<% request.setCharacterEncoding("UTF-8"); %>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>주문서 내역</title>
+</head>
+<body>
+[<A href="shop_list.jsp">쇼핑 목록으로</A>]
+<%
+	String sql =null;
+	Connection con = null;
+	Statement st1 = null;
+	Statement st2 = null;
+	ResultSet rs1 = null;
+	ResultSet rs2 = null;
+	
+	int count=0;
+	int price=0;
+	int qty=0;
+	String cond ="";
+	long id=0;
+	
+	if(request.getParameter("id")!=null){
+		id = Long.parseLong(request.getParameter("id"));
+		cond = "where id=" + id ;
+	}else
+		cond="order by id desc" ;
+	
+	NumberFormat nf = NumberFormat.getNumberInstance();
+	String totalstr="";
+	
+	try {
+		Class.forName("com.mysql.cj.jdbc.Driver");
+	} catch (ClassNotFoundException e) {
+		out.println(e);
+	}
+	/* DB연결부분 */
+	try {
+		con = DriverManager.getConnection(
+		"jdbc:mysql://localhost:3306/shop?useUnicode=true&characterEncoding=utf8&serverTimezone=UTC", "root",
+		"1234");
+
+%>
+
+
+</body>
+</html>

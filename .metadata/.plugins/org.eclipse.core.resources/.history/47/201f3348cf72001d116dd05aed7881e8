@@ -1,0 +1,10 @@
+<%@ page contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
+<%@ page language="java" import="java.text.*" %>
+<% request.setCharacterEncoding("UTF-8"); %>
+
+<%
+	int total=Integer.parseInt(request.getParameter("total"));
+	int count=Integer.parseInt(request.getParameter("count"));
+
+
+%>

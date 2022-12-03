@@ -7,8 +7,8 @@
 <title>상품 설명(이미지) 보기</title>
 <SCRIPT language="javascript">
 	function view(temp){
-		filename = "http://localhost:8080/EclipseJSP/Shop/src/main/webapp/image" + temp;
-		i = window.open(filename, "win", "height=350,width=450,toolbar=0,menubar=0,scrollbars=1,resizable=1,status=0";)
+		filename = "http://localhost:8080/jsp/shop/image" + temp;
+		i = window.open(filename, "win", "height=350,width=450,toolbar=0,menubar=0,scrollbars=1,resizable=1,status=0");
 	}
 </SCRIPT>
 
@@ -54,7 +54,7 @@ try{
 
 try{
 	st = con.createStatement();
-	sql = "select * from product where id=" + id;
+	sql = "select * from product where id= " + id;
 	rs = st.executeQuery(sql);
 	if(!(rs.next())) {
 		out.println("해당 내용이 없습니다.");
@@ -63,7 +63,7 @@ try{
 		out.println("<TABLE width=500 border=0 >");
 		out.println("<TR><TH rowspan=3>");
 		
-		out.println("<A href=JavaScropt:view(\"" + rs.getString("large")+"\">");
+		out.println("<A href=JavaScript:view(\""+rs.getString("large")+"\">");
 		out.println("<IMG width=100 height=100 src=" + small+">");
 		out.println("<BR>확대</A></TH>");
 		out.println("<TH bgcolor=#003399>");
